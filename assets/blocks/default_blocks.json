@@ -1,0 +1,381 @@
+{
+  "version": "1.0",
+  "blocks": [
+    {
+      "id": "air",
+      "numeric_id": 0,
+      "name": "Air",
+      "color": [0.0, 0.0, 0.0],
+      "hardness": 0.0,
+      "transparent": true,
+      "solid": false,
+      "breakable": false,
+      "category": "basic"
+    },
+    {
+      "id": "stone",
+      "numeric_id": 1,
+      "name": "Stone",
+      "color": [0.50, 0.50, 0.52],
+      "hardness": 1.5,
+      "category": "stone"
+    },
+    {
+      "id": "dirt",
+      "numeric_id": 2,
+      "name": "Dirt",
+      "color": [0.55, 0.40, 0.26],
+      "hardness": 0.5,
+      "category": "basic"
+    },
+    {
+      "id": "grass",
+      "numeric_id": 3,
+      "name": "Grass",
+      "color": {
+        "top": [0.36, 0.60, 0.28],
+        "side": [0.55, 0.40, 0.26],
+        "bottom": [0.55, 0.40, 0.26]
+      },
+      "hardness": 0.6,
+      "category": "basic"
+    },
+    {
+      "id": "sand",
+      "numeric_id": 4,
+      "name": "Sand",
+      "color": [0.92, 0.87, 0.65],
+      "hardness": 0.5,
+      "category": "basic"
+    },
+    {
+      "id": "gravel",
+      "numeric_id": 5,
+      "name": "Gravel",
+      "color": [0.55, 0.52, 0.50],
+      "hardness": 0.6,
+      "category": "basic"
+    },
+    {
+      "id": "cobblestone",
+      "numeric_id": 10,
+      "name": "Cobblestone",
+      "color": [0.45, 0.45, 0.45],
+      "hardness": 2.0,
+      "category": "stone"
+    },
+    {
+      "id": "mossy_cobblestone",
+      "numeric_id": 11,
+      "name": "Mossy Cobblestone",
+      "color": [0.40, 0.50, 0.38],
+      "hardness": 2.0,
+      "category": "stone"
+    },
+    {
+      "id": "granite",
+      "numeric_id": 12,
+      "name": "Granite",
+      "color": [0.60, 0.45, 0.40],
+      "hardness": 1.5,
+      "category": "stone"
+    },
+    {
+      "id": "diorite",
+      "numeric_id": 13,
+      "name": "Diorite",
+      "color": [0.75, 0.75, 0.75],
+      "hardness": 1.5,
+      "category": "stone"
+    },
+    {
+      "id": "andesite",
+      "numeric_id": 14,
+      "name": "Andesite",
+      "color": [0.55, 0.55, 0.55],
+      "hardness": 1.5,
+      "category": "stone"
+    },
+    {
+      "id": "deepslate",
+      "numeric_id": 15,
+      "name": "Deepslate",
+      "color": [0.30, 0.30, 0.32],
+      "hardness": 3.0,
+      "category": "stone"
+    },
+    {
+      "id": "coal_ore",
+      "numeric_id": 20,
+      "name": "Coal Ore",
+      "color": [0.35, 0.35, 0.35],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "iron_ore",
+      "numeric_id": 21,
+      "name": "Iron Ore",
+      "color": [0.55, 0.48, 0.45],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "gold_ore",
+      "numeric_id": 22,
+      "name": "Gold Ore",
+      "color": [0.55, 0.52, 0.35],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "diamond_ore",
+      "numeric_id": 23,
+      "name": "Diamond Ore",
+      "color": [0.45, 0.55, 0.58],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "emerald_ore",
+      "numeric_id": 24,
+      "name": "Emerald Ore",
+      "color": [0.45, 0.55, 0.45],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "redstone_ore",
+      "numeric_id": 25,
+      "name": "Redstone Ore",
+      "color": [0.55, 0.35, 0.35],
+      "hardness": 3.0,
+      "emissive": true,
+      "category": "ore"
+    },
+    {
+      "id": "lapis_ore",
+      "numeric_id": 26,
+      "name": "Lapis Lazuli Ore",
+      "color": [0.35, 0.40, 0.58],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "copper_ore",
+      "numeric_id": 27,
+      "name": "Copper Ore",
+      "color": [0.55, 0.48, 0.42],
+      "hardness": 3.0,
+      "category": "ore"
+    },
+    {
+      "id": "oak_log",
+      "numeric_id": 30,
+      "name": "Oak Log",
+      "color": {
+        "top": [0.50, 0.40, 0.25],
+        "side": [0.40, 0.30, 0.18],
+        "bottom": [0.50, 0.40, 0.25]
+      },
+      "hardness": 2.0,
+      "category": "wood"
+    },
+    {
+      "id": "oak_planks",
+      "numeric_id": 31,
+      "name": "Oak Planks",
+      "color": [0.65, 0.52, 0.32],
+      "hardness": 2.0,
+      "category": "wood"
+    },
+    {
+      "id": "oak_leaves",
+      "numeric_id": 32,
+      "name": "Oak Leaves",
+      "color": [0.30, 0.50, 0.22],
+      "hardness": 0.2,
+      "transparent": true,
+      "category": "nature"
+    },
+    {
+      "id": "birch_log",
+      "numeric_id": 33,
+      "name": "Birch Log",
+      "color": {
+        "top": [0.60, 0.55, 0.40],
+        "side": [0.85, 0.82, 0.75],
+        "bottom": [0.60, 0.55, 0.40]
+      },
+      "hardness": 2.0,
+      "category": "wood"
+    },
+    {
+      "id": "birch_planks",
+      "numeric_id": 34,
+      "name": "Birch Planks",
+      "color": [0.78, 0.72, 0.55],
+      "hardness": 2.0,
+      "category": "wood"
+    },
+    {
+      "id": "birch_leaves",
+      "numeric_id": 35,
+      "name": "Birch Leaves",
+      "color": [0.45, 0.58, 0.32],
+      "hardness": 0.2,
+      "transparent": true,
+      "category": "nature"
+    },
+    {
+      "id": "spruce_log",
+      "numeric_id": 36,
+      "name": "Spruce Log",
+      "color": {
+        "top": [0.45, 0.35, 0.22],
+        "side": [0.30, 0.22, 0.15],
+        "bottom": [0.45, 0.35, 0.22]
+      },
+      "hardness": 2.0,
+      "category": "wood"
+    },
+    {
+      "id": "spruce_planks",
+      "numeric_id": 37,
+      "name": "Spruce Planks",
+      "color": [0.45, 0.35, 0.22],
+      "hardness": 2.0,
+      "category": "wood"
+    },
+    {
+      "id": "spruce_leaves",
+      "numeric_id": 38,
+      "name": "Spruce Leaves",
+      "color": [0.22, 0.38, 0.25],
+      "hardness": 0.2,
+      "transparent": true,
+      "category": "nature"
+    },
+    {
+      "id": "water",
+      "numeric_id": 50,
+      "name": "Water",
+      "color": [0.25, 0.45, 0.75],
+      "hardness": 100.0,
+      "transparent": true,
+      "solid": false,
+      "breakable": false,
+      "category": "nature"
+    },
+    {
+      "id": "lava",
+      "numeric_id": 51,
+      "name": "Lava",
+      "color": [0.90, 0.45, 0.10],
+      "hardness": 100.0,
+      "emissive": true,
+      "light_level": 15,
+      "solid": false,
+      "breakable": false,
+      "category": "nature"
+    },
+    {
+      "id": "ice",
+      "numeric_id": 52,
+      "name": "Ice",
+      "color": [0.70, 0.82, 0.95],
+      "hardness": 0.5,
+      "transparent": true,
+      "category": "nature"
+    },
+    {
+      "id": "snow",
+      "numeric_id": 53,
+      "name": "Snow",
+      "color": [0.95, 0.95, 0.97],
+      "hardness": 0.2,
+      "category": "nature"
+    },
+    {
+      "id": "clay",
+      "numeric_id": 54,
+      "name": "Clay",
+      "color": [0.62, 0.65, 0.72],
+      "hardness": 0.6,
+      "category": "nature"
+    },
+    {
+      "id": "bricks",
+      "numeric_id": 60,
+      "name": "Bricks",
+      "color": [0.60, 0.35, 0.30],
+      "hardness": 2.0,
+      "category": "building"
+    },
+    {
+      "id": "stone_bricks",
+      "numeric_id": 61,
+      "name": "Stone Bricks",
+      "color": [0.48, 0.48, 0.48],
+      "hardness": 1.5,
+      "category": "building"
+    },
+    {
+      "id": "obsidian",
+      "numeric_id": 62,
+      "name": "Obsidian",
+      "color": [0.15, 0.10, 0.20],
+      "hardness": 50.0,
+      "category": "building"
+    },
+    {
+      "id": "glass",
+      "numeric_id": 63,
+      "name": "Glass",
+      "color": [0.85, 0.90, 0.92],
+      "hardness": 0.3,
+      "transparent": true,
+      "category": "building"
+    },
+    {
+      "id": "iron_block",
+      "numeric_id": 70,
+      "name": "Iron Block",
+      "color": [0.78, 0.78, 0.78],
+      "hardness": 5.0,
+      "category": "metal"
+    },
+    {
+      "id": "gold_block",
+      "numeric_id": 71,
+      "name": "Gold Block",
+      "color": [0.95, 0.80, 0.25],
+      "hardness": 3.0,
+      "category": "metal"
+    },
+    {
+      "id": "diamond_block",
+      "numeric_id": 72,
+      "name": "Diamond Block",
+      "color": [0.45, 0.85, 0.88],
+      "hardness": 5.0,
+      "category": "metal"
+    },
+    {
+      "id": "emerald_block",
+      "numeric_id": 73,
+      "name": "Emerald Block",
+      "color": [0.30, 0.78, 0.40],
+      "hardness": 5.0,
+      "category": "metal"
+    },
+    {
+      "id": "copper_block",
+      "numeric_id": 74,
+      "name": "Copper Block",
+      "color": [0.85, 0.55, 0.40],
+      "hardness": 3.0,
+      "category": "metal"
+    }
+  ]
+}

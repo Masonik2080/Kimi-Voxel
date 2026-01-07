@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "description": "World generation block mappings - defines which blocks appear at different heights/biomes",
+  
+  "layers": {
+    "bedrock": {
+      "block": "deepslate",
+      "max_y": -29
+    },
+    "deep_stone": {
+      "block": "stone",
+      "max_y": -4,
+      "relative_to": "surface"
+    },
+    "subsurface": {
+      "block": "dirt",
+      "max_y": 0,
+      "relative_to": "surface"
+    }
+  },
+  
+  "surface": {
+    "beach": {
+      "block": "sand",
+      "subsurface": "sand",
+      "height_max": 8.0
+    },
+    "plains": {
+      "block": "grass",
+      "subsurface": "dirt",
+      "height_min": 8.0,
+      "height_max": 30.0
+    },
+    "mountains": {
+      "block": "stone",
+      "subsurface": "stone",
+      "height_min": 30.0,
+      "height_max": 50.0
+    },
+    "peaks": {
+      "block": "snow",
+      "subsurface": "stone",
+      "height_min": 50.0
+    }
+  },
+  
+  "caves": {
+    "air": "air",
+    "floor": "stone",
+    "min_height": -20,
+    "surface_offset": 5
+  },
+  
+  "ores": [
+    {
+      "block": "coal_ore",
+      "min_y": -20,
+      "max_y": 40,
+      "frequency": 0.02,
+      "vein_size": 8
+    },
+    {
+      "block": "iron_ore",
+      "min_y": -30,
+      "max_y": 20,
+      "frequency": 0.015,
+      "vein_size": 6
+    },
+    {
+      "block": "gold_ore",
+      "min_y": -30,
+      "max_y": 0,
+      "frequency": 0.005,
+      "vein_size": 4
+    },
+    {
+      "block": "diamond_ore",
+      "min_y": -30,
+      "max_y": -10,
+      "frequency": 0.002,
+      "vein_size": 3
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+[package]
+name = "end"
+version = "0.1.0"
+edition = "2021"
+
+# Оптимизации для зависимостей даже в debug режиме
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev]
+opt-level = 1
+
+[dependencies]
+# --- NOISE & TERRAIN GENERATION ---
+simdnoise = { git = "https://github.com/verpeteren/rust-simd-noise" }  # SIMD-ускоренная генерация шума (Perlin, Simplex и др.)
+
+# --- MESH GENERATION ---
+fast-surface-nets = { git = "https://github.com/bonsairobo/fast-surface-nets-rs" }  # Быстрое извлечение изоповерхностей из SDF
+block-mesh = { git = "https://github.com/bonsairobo/block-mesh-rs" }  # Генерация мешей для воксельных блоков
+
+# --- DATA STRUCTURES ---
+vdb-rs = { git = "https://github.com/Traverse-Research/vdb-rs" }  # OpenVDB формат для разреженных воксельных данных
+vob = { git = "https://github.com/softdevteam/vob" }  # Vector of Bits - компактное хранение битов
+
+# --- MATH ---
+ultraviolet = { git = "https://github.com/fu5ha/ultraviolet" }  # Быстрая линейная алгебра (векторы, матрицы, кватернионы)
+ndshape = "0.3"  # N-мерные формы и индексация для воксельных массивов
+
+# --- PHYSICS ---
+rapier3d = "0.22"  # 3D физический движок (коллизии, rigid bodies, joints)
+
+# --- PARALLELISM ---
+rayon = "1"  # Параллельные итераторы и пул потоков
+
+# --- MEMORY & SERIALIZATION ---
+bytemuck = { version = "1", features = ["derive"] }  # Безопасное преобразование типов в байты (для GPU буферов)
+serde = { version = "1", features = ["derive"] }  # Сериализация/десериализация
+serde_json = "1"  # JSON формат для data-driven блоков
+bincode = "1"  # Бинарный формат для serde
+zstd = "0.13"  # ZSTD сжатие
+
+# --- GRAPHICS ---
+wgpu = "25"  # Кроссплатформенный GPU API (Vulkan/Metal/DX12/WebGPU)
+winit = "0.30"  # Кроссплатформенное создание окон и обработка событий
+wgpu_text = "0.9"  # Простой рендеринг текста для wgpu
+
+# --- LOGGING (для отладки) ---
+log = "0.4"  # Фасад логирования
+env_logger = "0.11"  # Реализация логгера через переменные окружения
+
+# --- AUDIO ---
+kira = "0.9"  # Продвинутая звуковая библиотека с пространственным аудио
+
+# --- UI (HTML/CSS через Blitz) ---
+blitz-dom = { git = "https://github.com/DioxusLabs/blitz" }
+blitz-html = { git = "https://github.com/DioxusLabs/blitz" }
+blitz-traits = { git = "https://github.com/DioxusLabs/blitz" }
+
+# --- ASYNC ---
+pollster = "0.4"  # Блокирующий executor для async
